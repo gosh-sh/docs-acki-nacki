@@ -1,0 +1,63 @@
+site_name: ACKI NACKI
+nav:
+  - Acki Nacki:
+    - Why Acki-Nacki?: index.md
+    - About protocol: acki-nacki/overview.md
+    - About network: acki-nacki/info.md
+  - For developers:
+    - Connection to network: 
+      - Quick start for TVM CLI: acki-nacki/connection-to-network/quick-start-tvm-cli.md
+      - Quick start for TVM SDK: acki-nacki/connection-to-network/quick-start-tvm-sdk.md
+      - Create and compile contract: acki-nacki/connection-to-network/create-and-compile-contract.md
+      - Create giver: acki-nacki/connection-to-network/create-giver.md
+  #- For validators:
+    #- General information: acki-nacki/info.md
+  - Links: links.md
+
+
+markdown_extensions:
+    - admonition
+    - abbr
+    - attr_list
+    - md_in_html
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.arithmatex:
+        generic: true
+    - tables
+
+theme:
+  logo: images/acki_nacki_logo.svg
+  favicon: images/acki_nacki_logo.svg
+  # name: readthedocs
+  name: material
+  language: en
+  features:
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.expand
+    - content.code.copy
+    - content.tooltips
+  palette:
+    scheme: default
+    primary: white
+    accent: light blue
+  icon:
+    annotation: material/arrow-right-circle
+
+docs_dir: src
+site_dir: docs
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
